@@ -1,4 +1,5 @@
 # Cisco
+```
 crypto isakmp policy 1
 	encryption aes 256
 	hash sha256
@@ -29,8 +30,9 @@ ip access-list extended FW
 ip access-list extended 155
 	10 permit gre any any
 	20 permit gre host 5.5.5.100 host 4.4.4.100
-
+```
 # StrongSwan
+```
 conn eto-base
 	fragmentation=yes
 	dpdaction=restart
@@ -46,3 +48,4 @@ conn tun0
 	right=5.5.5.100
 	rightauth=psk
 	auto=start
+```
